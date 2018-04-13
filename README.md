@@ -1,2 +1,2 @@
-# Windows-8.1-Metro
-GTK theme taking styles &amp; colors from Windows 8.1 Metro apps
+# Windows-10-Mobile
+GTK theme based on the Windows 10 Mobile appearance
