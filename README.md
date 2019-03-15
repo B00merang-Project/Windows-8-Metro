@@ -1,7 +1,7 @@
 # Windows 8.1 Metro
 ### Theme reproducing the flat and semi-dark of the Windows 8.1 Metro apps
 
-![windows-8.1-metro](https://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-from-2018-04-13-19-13-06_orig.png)
+![windows-8.1-metro](https://github.com/B00merang-Project/gallery/raw/master/Windows%208.1%20Metro%20(4).png)
 
 **Maintainer :** [Elbullazul](https://github.com/Elbullazul)
 
