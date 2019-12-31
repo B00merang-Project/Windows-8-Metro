@@ -15,8 +15,8 @@
    height="24"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="auto-tile-2.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="add-workspace-bg-hover.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -29,29 +29,29 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="15.328321"
-     inkscape:cx="-11.694139"
-     inkscape:cy="11.7026"
+     inkscape:zoom="14.5625"
+     inkscape:cx="-16.431179"
+     inkscape:cy="12.687893"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="846"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="0"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
      inkscape:snap-bbox="true"
      gridtolerance="10000"
-     inkscape:object-nodes="true"
+     inkscape:object-nodes="false"
      inkscape:snap-grids="true"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-maximized="1"
-     inkscape:bbox-nodes="true"
+     inkscape:bbox-nodes="false"
      inkscape:bbox-paths="false"
      inkscape:snap-bbox-edge-midpoints="false"
      inkscape:snap-bbox-midpoints="false"
@@ -129,14 +129,19 @@
      inkscape:label="Base"
      id="layer1"
      transform="translate(0,-276)">
-    <path
-       style="fill:#ffffff;fill-opacity:1"
-       d="M 6 16 L 6 18 L 7 18 L 7 16 L 6 16 z M 17 16 L 17 18 L 18 18 L 18 16 L 17 16 z M 6 19 L 6 21 L 7 21 L 7 19 L 6 19 z M 17 19 L 17 21 L 18 21 L 18 19 L 17 19 z "
-       transform="translate(0,276)"
-       id="rect3047" />
-    <path
-       id="rect3263"
-       style="opacity:0.50000000000000000;fill:#ffffff;fill-opacity:1"
-       d="m 2,279 9,0 0,5 -9,0 z m 0,6 9,0 0,5 -9,0 z m 11,-6 9,0 0,5 -9,0 z m 0,6 9,0 0,5 -9,0 z" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.20000005;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.68627451"
+       id="rect817"
+       width="24"
+       height="24"
+       x="0"
+       y="276" />
+    <rect
+       style="display:inline;opacity:1;fill:#191919;fill-opacity:1;stroke:none;stroke-width:1.12472224;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.68627451;enable-background:new"
+       id="rect817-3"
+       width="23"
+       height="22"
+       x="1.0004139"
+       y="277.02588" />
   </g>
 </svg>
