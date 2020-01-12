@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Windows 8.1 Metro
+Comment=Windows 8.1 Metro UI for Linux OSes
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Windows 8.1 Metro
+MetacityTheme=Windows 8.1 Metro
+IconTheme=Sigma-metro-win2folders
+CursorTheme=DMZ-White
+ButtonLayout=menu:minimize,maximize,close
