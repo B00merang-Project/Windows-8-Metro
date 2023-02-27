@@ -1417,94 +1417,101 @@ scale {
   min-height: 10px;
   min-width: 10px;
   padding: 12px; }
-  scale fill, scale trough {
+  scale > fill,
+  scale > trough {
     border: none;
-    border-radius: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    outline-offset: 2px; }
-    scale fill:disabled, scale trough:disabled {
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.2); }
+    scale > fill:disabled,
+    scale > trough:disabled {
       background-color: rgba(0, 0, 0, 0.15); }
-      scale fill:disabled:backdrop, scale trough:disabled:backdrop {
+      scale > fill:disabled:backdrop,
+      scale > trough:disabled:backdrop {
         background-color: rgba(0, 0, 0, 0.08); }
-    scale fill:backdrop, scale trough:backdrop {
+    scale > fill:backdrop,
+    scale > trough:backdrop {
       background-color: rgba(0, 0, 0, 0.1); }
-  scale highlight {
+  scale > trough > highlight {
     border: none;
-    border-radius: 0;
+    margin: 0px;
+    border-radius: 0px;
     background-color: #0076C6; }
-    scale highlight:disabled {
+    scale > trough > highlight:disabled {
       background-color: #c2c2c2; }
-      scale highlight:disabled:backdrop {
+      scale > trough > highlight:disabled:backdrop {
         background-color: #c8c8c8; }
-    scale highlight:backdrop {
+    scale > trough > highlight:backdrop {
       background-color: #0076C6; }
-  scale.horizontal indicator {
-    min-height: 6px;
-    min-width: 1px; }
-  scale.horizontal.fine-tune indicator {
-    min-height: 3px; }
-  scale.vertical indicator {
-    min-height: 1px;
-    min-width: 6px; }
-  scale.vertical.fine-tune indicator {
-    min-width: 3px; }
-  scale.fine-tune.horizontal {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    min-height: 14px; }
-  scale.fine-tune.vertical {
-    padding-left: 10px;
-    padding-right: 10px;
-    min-width: 14px; }
-  scale.fine-tune slider {
-    margin: -6px; }
-  scale.fine-tune fill, scale.fine-tune trough, scale.fine-tune highlight {
-    border-radius: 0; }
-  scale.fine-tune marks.top {
-    margin-bottom: 8px;
-    margin-top: -13px; }
-  scale.fine-tune marks.bottom {
-    margin-top: 8px;
-    margin-bottom: -13px; }
-  scale.fine-tune marks.top {
-    margin-right: 8px;
-    margin-left: -13px; }
-  scale.fine-tune marks.bottom {
-    margin-left: 8px;
-    margin-right: -13px; }
-  scale slider {
-    min-height: 10px;
+  scale > trough > slider {
     min-width: 10px;
-    margin: 0;
+    min-height: 10px;
+    margin: 0px;
+    border-radius: 0px;
     border: none;
-    border-radius: 0;
     color: #FFFFFF;
-    background-color: #000000; }
-    scale slider:disabled {
-      background-color: gray;
-      -gtk-icon-shadow: none; }
-      scale slider:disabled:backdrop {
-        background-color: #bfbfbf;
-        -gtk-icon-shadow: none; }
-    scale slider:backdrop {
+    background-color: #000000;
+    background-image: none;
+    box-shadow: none; }
+    scale > trough > slider:disabled {
+      background-color: gray; }
+      scale > trough > slider:disabled:backdrop {
+        background-color: #bfbfbf; }
+    scale > trough > slider:backdrop {
       color: #FFFFFF;
       background-color: #000000; }
-  scale value {
+  scale.fine-tune.horizontal {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    min-height: 16px; }
+  scale.fine-tune.vertical {
+    min-width: 16px; }
+  scale.fine-tune > trough,
+  scale.fine-tune > trough > fill,
+  scale.fine-tune > trough > highlight {
+    border-radius: 0px; }
+  scale.fine-tune > trough > slider {
+    margin: 0px; }
+  scale > value {
+    color: alpha(currentColor, 0.55);
+    font-feature-settings: "tnum"; }
+  scale > marks {
     color: alpha(currentColor, 0.55); }
-  scale marks {
-    color: alpha(currentColor, 0.55); }
-    scale marks.top {
-      margin-bottom: 6px;
-      margin-top: -12px; }
-    scale marks.bottom {
-      margin-top: 6px;
-      margin-bottom: -12px; }
-    scale marks.top {
-      margin-right: 6px;
-      margin-left: -12px; }
-    scale marks.bottom {
-      margin-left: 6px;
-      margin-right: -12px; }
+  scale.horizontal > marks.top {
+    margin-bottom: 6px; }
+  scale.horizontal > marks.bottom {
+    margin-top: 6px; }
+  scale.horizontal > marks indicator {
+    min-width: 1px;
+    min-height: 6px;
+    background-color: currentColor; }
+  scale.horizontal > value.left {
+    margin-right: 9px; }
+  scale.horizontal > value.right {
+    margin-left: 9px; }
+  scale.horizontal.fine-tune > marks.top {
+    margin-top: 3px; }
+  scale.horizontal.fine-tune > marks.bottom {
+    margin-bottom: 3px; }
+  scale.horizontal.fine-tune > marks indicator {
+    min-height: 3px; }
+  scale.vertical > marks.top {
+    margin-right: 6px; }
+  scale.vertical > marks.bottom {
+    margin-left: 6px; }
+  scale.vertical > marks indicator {
+    min-height: 1px;
+    min-width: 6px;
+    background-color: currentColor; }
+  scale.vertical > value.top {
+    margin-bottom: 9px; }
+  scale.vertical > value.bottom {
+    margin-top: 9px; }
+  scale.vertical.fine-tune > marks.top {
+    margin-left: 3px; }
+  scale.vertical.fine-tune > marks.bottom {
+    margin-right: 3px; }
+  scale.vertical.fine-tune > marks indicator {
+    min-height: 3px; }
 
 progressbar {
   font-size: smaller;
@@ -1776,34 +1783,40 @@ calendar {
   border-style: solid;
   border-color: #e6e6e6;
   color: #000000; }
-  calendar.header {
+  calendar > header {
     border: none;
     border-bottom: 1px solid #fcfcfc;
     color: #000000; }
-  calendar.button {
-    color: rgba(0, 0, 0, 0.45); }
-    calendar.button:hover {
-      color: #000000; }
-    calendar.button:backdrop {
-      color: rgba(0, 0, 0, 0.45); }
-    calendar.button:disabled {
-      color: rgba(128, 128, 128, 0.45); }
-  calendar:selected {
-    border-radius: 1px;
-    color: #FFFFFF;
-    background-color: #0076C6; }
-    calendar:selected:backdrop {
+    calendar > header > button {
+      border: none;
+      box-shadow: none;
+      background: none;
+      border-radius: 0; }
+      calendar > header > button:hover {
+        color: #000000; }
+      calendar > header > button:backdrop {
+        color: #000000; }
+      calendar > header > button:disabled {
+        color: gray; }
+  calendar > grid > label.today {
+    box-shadow: inset 0px -2px #e6e6e6; }
+    calendar > grid > label.today:selected {
+      box-shadow: none; }
+  calendar > grid > label:focus {
+    outline-color: #e6e6e6;
+    outline-offset: -2px;
+    outline-width: 2px;
+    outline-style: solid; }
+  calendar > grid > label.day-number {
+    padding: 3px; }
+    calendar > grid > label.day-number:selected {
       color: #FFFFFF;
-      background-color: #0076C6; }
-  calendar:indeterminate {
-    color: alpha(currentColor, 0.1); }
-  calendar.highlight {
-    color: gray; }
-    calendar.highlight:backdrop {
-      color: #bfbfbf; }
-  calendar:backdrop {
-    color: #000000;
-    border-color: #e6e6e6; }
+      background-color: #0076C6;
+      border-radius: 0px; }
+    calendar > grid > label.day-number:checked {
+      background-color: rgba(0, 118, 198, 0.3); }
+  calendar > grid > label.day-number.other-month {
+    color: alpha(currentColor, 0.3); }
 
 window.dialog.message .titlebar {
   min-height: 20px;
