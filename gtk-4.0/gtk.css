@@ -444,10 +444,12 @@ editablelabel > stack > text > selection {
 
 button {
   padding: 4px 8px;
-  border: none;
   border-radius: 0px;
+  border: none;
   color: #000000;
   background-color: #cccccc;
+  background-image: none;
+  box-shadow: none;
   /*
   outline-color: gtkalpha($dark_shadow, 0.15);
   outline-offset: -2px;
@@ -476,7 +478,9 @@ button {
     border-color: transparent;
     border-radius: 0px;
     color: #000000;
-    background-color: transparent; }
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none; }
     button.flat:hover {
       color: #000000;
       background-color: #FFFFFF; }
@@ -499,8 +503,8 @@ button {
       box-shadow: none; }
 
 button.destructive-action {
-  border: none;
   border-radius: 0px;
+  border: none;
   color: #fae6e6;
   background-color: #CC0000; }
   button.destructive-action:hover {
@@ -512,8 +516,8 @@ button.destructive-action {
     background-color: #db4d4d; }
 
 button.suggested-action {
-  border: none;
   border-radius: 0px;
+  border: none;
   color: #FFFFFF;
   background-color: #0076C6; }
   button.suggested-action:hover {
@@ -655,7 +659,9 @@ toolbar {
     border-color: transparent;
     border-radius: 0px;
     color: #000000;
-    background-color: transparent; }
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none; }
     toolbar button.flat:hover {
       color: #000000;
       background-color: #FFFFFF; }
@@ -797,7 +803,9 @@ headerbar {
     border-color: transparent;
     border-radius: 0px;
     color: #FFFFFF;
-    background-color: transparent; }
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none; }
     headerbar button:hover {
       color: #FFFFFF;
       background-color: #111111; }
